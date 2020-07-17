@@ -1,0 +1,19 @@
+
+
+
+if presiono"q":
+    if doyclickizquierdo:
+        CTLR
+        se me posicione el puntero del mouse en estas cordenadas(1810,100)
+        clickizquierdo
+        CTLR
+    elif doy clickderecho:
+        CTLR
+        se me posicione el puntero del mouse en estas cordenadas(1810,100)
+        clickizquierdo
+        CTLR
+    else:
+        CTLR
+        se me posicione el puntero del mouse en estas cordenadas(1810,100)
+        clickizquierdo
+        CTLR
