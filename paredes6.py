@@ -10,9 +10,9 @@ import os
 def funtionclick(x,y,button,pressed):
     click=button
     print(click)
-    if click =="button.left":
+    if click == Button.left:
         print("click izquierdo")
-    elif click =="button.right":
+    elif click == Button.right:
         print("click derecho")
     else:
         print("click cualquiera")
