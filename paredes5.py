@@ -1,4 +1,3 @@
-
 from pynput.keyboard import Listener
 from pynput.mouse import Button,Listener
 from pynput import *
@@ -10,21 +9,26 @@ import sys
 import os
 def funtionclick(x,y,button,pressed):
     click=button
-    if click =="button.right":
-        print("click izquierdo")
-        pyautogui.hotkey("ctrl")
-        pa.moveTo(1810,100)
-        pg.click(1810,100)
-        pyautogui.hotkey("ctrl")
+    print(click)
+    while (1):
+        if click == Button.left:
+            print("click izquierdo")
+            pyautogui.hotkey("ctrl")
+            pa.moveTo(1810,100)
+            pg.click(1810,100)
+            pyautogui.hotkey("ctrl")
+            break
 
-    else:
-        click =="button.left":
-        pyautogui.hotkey("ctrl")
-        print("click izquierdo")
-        pa.moveTo(1810,100)
-        pg.click(1810,100)
-        pyautogui.hotkey("ctrl")
+        elif click == Button.right:
+            print("click derecho")
+            pyautogui.hotkey("ctrl")
+            pa.moveTo(1810,100)
+            pg.click(1810,100)
+            pyautogui.hotkey("ctrl")
+            break
 
+        else:
+            print("click cualquiera")
 
 
 with Listener(on_click=funtionclick) as listener:

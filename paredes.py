@@ -10,22 +10,24 @@ import os
 def funtionclick(x,y,button,pressed):
     click=button
     print(click)
-    if click == Button.left:
-        print("click izquierdo")
-        pyautogui.hotkey("ctrl")
-        pa.moveTo(1810,100)
-        pg.click(1810,100)
-        pyautogui.hotkey("ctrl")
+    while (1):
+        if click == Button.left:
+            print("click izquierdo")
+            pyautogui.hotkey("ctrl")
+            pa.moveTo(1810,100)
 
-    elif click == Button.right:
-        print("click derecho")
-        pyautogui.hotkey("ctrl")
-        pa.moveTo(1810,100)
-        pg.click(1810,100)
-        pyautogui.hotkey("ctrl")
+            break
 
-    else:
-        print("click cualquiera")
+        elif click == Button.right:
+            print("click derecho")
+            
+            pa.moveTo(1810,100)
+
+
+            break
+
+        else:
+            print("click cualquiera")
 
 
 with Listener(on_click=funtionclick) as listener:
