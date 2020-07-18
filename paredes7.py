@@ -7,18 +7,18 @@ import pyautogui as pg
 import pyautogui as pa
 import sys
 import os
-clickrojo=pg.click()
 def funtionclick(x,y,button,pressed):
     click=button
-    print(click)
     if click == Button.left:
         print("click izquierdo")
         pa.moveTo(1810,100)
+        sys.exit()
 
 
     elif click == Button.right:
         print("click derecho")
         pa.moveTo(1810,100)
+        sys.exit()
 
     else:
         print("click cualquiera")
