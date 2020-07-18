@@ -12,8 +12,13 @@ def funtionclick(x,y,button,pressed):
     print(click)
     if click == Button.left:
         print("click izquierdo")
+        pyautogui.hotkey("ctrl")
+        pa.moveTo(1810,100)
     elif click == Button.right:
         print("click derecho")
+        pa.moveTo(1810,100)
+
+
     else:
         print("click cualquiera")
 

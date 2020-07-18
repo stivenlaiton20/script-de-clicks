@@ -15,8 +15,6 @@ def capt(key):
         import paredes7
         paredes7.funtionclick()
 
-
-
     elif tecla == "g":
         print("perro")
     elif tecla == "p":
