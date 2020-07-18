@@ -1,7 +1,7 @@
 from pynput.keyboard import Listener
 from pynput.mouse import Button,Listener
 from pynput import *
-import paredes3
+
 import pyautogui
 import pyautogui as pg
 import pyautogui as pa
@@ -13,22 +13,22 @@ def funtionclick(x,y,button,pressed):
     if click == Button.left:
         print("click izquierdo")
         pa.moveTo(1810,100)
-        paredes3.capt
-
-
+        os.system('pause')
 
 
     elif click == Button.right:
         print("click derecho")
         pa.moveTo(1810,100)
-        paredes3.capt
-
+        os.system('pause')
 
 
     else:
         print("click cualquiera")
-        paredes3.capt
+        os.system('pause')
+    os.system('pause')
 
-
+os.system('pause')
 with Listener(on_click=funtionclick) as listener:
     listener.join()
+
+os.system('pause')

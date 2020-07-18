@@ -7,6 +7,7 @@ import pyautogui as pg
 import pyautogui as pa
 import sys
 import os
+clickrojo=pg.click()
 def funtionclick(x,y,button,pressed):
     click=button
     print(click)
@@ -15,7 +16,6 @@ def funtionclick(x,y,button,pressed):
             print("click izquierdo")
             pyautogui.hotkey("ctrl")
             pa.moveTo(1810,100)
-            pg.click(1810,100)
             pyautogui.hotkey("ctrl")
             break
 
@@ -23,12 +23,12 @@ def funtionclick(x,y,button,pressed):
             print("click derecho")
             pyautogui.hotkey("ctrl")
             pa.moveTo(1810,100)
-            pg.click(1810,100)
             pyautogui.hotkey("ctrl")
             break
 
         else:
             print("click cualquiera")
+            break
 
 
 with Listener(on_click=funtionclick) as listener:

@@ -16,24 +16,11 @@ def capt(key):
     tecla = tecla.replace("'", "")
     if tecla == 'q':
         while (1):
-            if eventoclik():
-                pyautogui.hotkey("ctrl")
-                pa.moveTo(1810,100)
-                pg.click(1810,100)
-                pyautogui.hotkey("ctrl")
-                break
-            elif pyautogui.click(button='right'):
-                pyautogui.hotkey("ctrl")
-                pa.moveTo(1810,100)
-                pg.click(1810,100)
-                pyautogui.hotkey("ctrl")
-                break
-            elif tecla == 2:
-                pyautogui.hotkey("ctrl")
-                pa.moveTo(1810,100)
-                pg.click(1810,100)
-                pyautogui.hotkey("ctrl")
-                break
+            pa.moveTo(1810,100)
+            pg.click(1810,100)
+            pyautogui.hotkey("ctrl")
+            break
+  
 
 
     if tecla == 'Key.escape':

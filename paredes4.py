@@ -8,7 +8,6 @@ import pyautogui as pa
 import sys
 import os
 
-klik = "p"
 
 
 def capt(key):
@@ -16,40 +15,13 @@ def capt(key):
     print("tecla")
     tecla = tecla.replace("'", "")
     if tecla == "q":
-        def funtionclick(x,y,button,pressed):
-            click=button
-            print(click)
-            klik=click
-
-            if klik =="button.right":
-                pyautogui.hotkey("ctrl")
-                pa.moveTo(1810,100)
-                pg.click(1810,100)
-                pyautogui.hotkey("ctrl")
-
-            elif klik =="button.left":
-                pyautogui.hotkey("ctrl")
-                pa.moveTo(1810,100)
-                pg.click(1810,100)
-                pyautogui.hotkey("ctrl")
-
-            elif tecla == 2:
-                pyautogui.hotkey("ctrl")
-                pa.moveTo(1810,100)
-                pg.click(1810,100)
-                pyautogui.hotkey("ctrl")
-        with Listener(on_click=funtionclick) as listener:
-                listener.join()
-
-
-
-    if tecla == "g":
+        print("espichaste")
+        pa.moveTo(1810,100)
+    elif tecla == "g":
         print("perro")
-    if tecla == "p":
+    elif tecla == "p":
         sys.exit()
-
-
-
-
+    else:
+        print("tecla incorrecta")
 with Listener(on_press=capt) as c:
     c.join()
